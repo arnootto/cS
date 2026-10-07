@@ -1,0 +1,28 @@
+Package: cS
+Type: Package
+Title: Contaminated Survival Models
+Version: 0.1.0
+Date: 2026-10-07
+Authors@R:
+    person("Arno", "Otto", email = "arno.otto@up.ac.za",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6565-2910"))
+Description: Density, survival, hazard and random generation functions, and
+    maximum likelihood estimation, for the contaminated survival (cS) model.
+    The cS model is a two-component mixture in which both components share the
+    same reference survival distribution and differ only in the level of the
+    hazard: a proportion alpha of the observations belongs to a delayed
+    component whose hazard is multiplied by eta in (0, 1). Two members are
+    implemented: the contaminated exponential (cE) and the contaminated
+    Weibull (cW). Parameters are estimated with the EM algorithm, and the
+    mixing weight may depend on concomitant variables through a logistic
+    link. Includes the January 2024 Ecuadorian birth registration data used
+    in Otto (2026).
+License: GPL (>= 3)
+URL: https://github.com/arnootto/cS
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.5.0)
+Imports:
+    stats
+RoxygenNote: 7.3.1
